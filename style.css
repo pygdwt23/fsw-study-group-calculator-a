@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+.judulHeader {
+	text-align: center;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 10px;
+	background: linear-gradient(to bottom, #696969 0%, #5a5a5a 100%);
+	text-align: center;
+	color: white;
+	margin-bottom: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+	/* border: 1px solid black; */
+}
+
+.container {
+	background-color: rgb(80, 96, 105);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+body {
+	font-family: "Oxanium", sans-serif;
+}
+
+.flex-container-column {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.flex-container-row {
+	display: flex;
+}
+
+.button {
+	flex-basis: 25%;
+
+	font-size: 1.5em;
+	text-align: center;
+	padding: 40px;
+	/* border: 1px solid black; */
+	background: silver;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 3px;
+	color: white;
+}
+
+.button :hover {
+	font-weight: bold;
+}
+
+.double {
+	flex-basis: 50%;
+}
+
+.display {
+	color: black;
+	background-color: rgba(181, 198, 208, 1);
+	width: 100%;
+	padding: 10px 20px;
+	border: 5px solid black;
+	font-size: 2em;
+	filter: opacity(80%);
+	margin-bottom: 20px;
+}
+
+.operator,
+.negative,
+.equals {
+	background: dimgray;
+	color: white;
+	/* border: 1px solid white; */
+}
+
+.clear {
+	background: #d96a6a;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 30px;
+	margin-top: auto;
+	background: #ded6ab;
+}
+
+footer {
+	padding: 10px;
+	color: white;
+	background-color: #d96a6a;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+	text-align: center;
+}
+
+.history {
+	width: 80%;
+	margin: 30px auto 0 auto;
+	overflow: scroll;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 5px solid #000;
+	/* background-color: rgba(181,198,208,1) ; */
+}
+
+th,
+td {
+	text-align: center;
+	padding: 16px;
+}
+
+th {
+	background-color: #ded6ab;
+	color: black;
+}
+
+/* tr:nth-child(even) {
+    background-color: rgba(181,198,208,1);
+ }  */
+
+@media screen and (max-width: 1000px) {
+	.button {
+		padding: 10px;
+	}
+	.history {
+		width: 100%;
+	}
+}
